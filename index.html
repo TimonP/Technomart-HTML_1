@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Техномарт</title>
+
+		<link rel="icon" href="favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="keywords" content="Техномарт">
+		<meta name="description" content="Главная страница проекта">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="header-contacts">
+				<div class="container">
+					<address class="contacts">
+						<p class="contact-name">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+						<p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<a class="contact-phone" href="tel:+78125550555">
+							<svg aria-hidden="true" focusable="false" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.53 5.07c.41-.56.56-1.15.1-1.67A25.54 25.54 0 0 0 5.42.58a2.17 2.17 0 0 0-2.96 0l-.93.93C-.7 3.76.66 8.51 4.3 12.15c3.63 3.64 8.37 5 10.62 2.76l.93-.94c.72-.76.82-2.08 0-2.94-.43-.45-1.3-1.12-2.83-2.22-.47-.42-1.02-.33-1.53.01-.25.16-.43.32-.76.66l-.62.62c-.08.08-1.17-.47-2.23-1.54C6.8 7.5 6.27 6.4 6.35 6.32l.6-.61a11.92 11.92 0 0 0 .58-.64Zm3.71 6.16.62-.62c.18-.18.3-.3.4-.38 1.34.97 2.12 1.58 2.44 1.9.19.2.16.57 0 .74l-.9.9c-1.45 1.45-5.28.35-8.37-2.75-3.1-3.1-4.2-6.94-2.76-8.38l.92-.92c.14-.14.54-.17.71 0 .34.34.98 1.15 1.9 2.45a3.38 3.38 0 0 1-.37.4l-.61.62C4.18 6.23 5.06 8 6.75 9.69c1.68 1.69 3.45 2.58 4.5 1.54ZM9.77.06a7.6 7.6 0 0 1 6.6 6.62l-1.57.26a6 6 0 0 0-5.3-5.3L9.77.06Zm-.53 3.16a4.4 4.4 0 0 1 3.98 3.98l-1.58.27A2.8 2.8 0 0 0 8.98 4.8l.26-1.58Z" fill="currentColor"/>
+							</svg>+7 (812) 555-05-55</a>
+					</address>
+				</div>
+			</div>
+
+			<div class="header-content">
+				<div class="container">
+					<div class="header-content-wrapper">
+						<a class="logo" href="index.html">
+							<img alt="Логотип «Техномарт»." src="images/logo.svg" width="106.67" height="16.9">
+						</a>
+
+						<form class="search" action="https://echo.htmlacademy.ru/" method="post">
+							<button class="button" type="submit">
+								<svg aria-hidden="true" focusable="false" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.48 16a8 8 0 1 1 6.31-3.1l5.38 5.4-1.41 1.4-5.38-5.38A7.95 7.95 0 0 1 8.48 16Zm6-8a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z" fill="currentColor"/>
+								</svg>
+								<span class="visually-hidden" for="find-product">Найти</span>
+							</button>
+							<div class="search-input-reset-button-wrapper">
+								<label class="visually-hidden" for="find-product">Поиск товара</label>
+								<input class="search-input" type="search" name="searching-product" id="find-product" required autocomplete="off" placeholder="Поиск:">
+								<button class="search-reset-button" type="reset">
+									<span class="visually-hidden">Сброс введенного текста</span>
+								</button>
+							</div>		
+						</form>
+
+						<button class="button button-header-content" type="button">
+							<svg aria-hidden="true" focusable="false" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.27 2h5v12h-5v2h7V0h-7v2Zm-4.7 1.7L7.8 6.96H.28v2h7.53l-3.24 3.24 1.41 1.42 4.95-4.95.7-.71-.7-.7-4.95-4.96-1.41 1.42Z" fill="currentColor"/>
+							</svg>
+							<span class="enter">Войти</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-navigation">
+				<div class="container">
+					<nav class="navigation">
+						<ul class="navigation-main-menu">
+							<li class="navigation-item">
+								<a class="navigation-link" href="#">Главная</a>
+							</li>
+							<li class="navigation-item">
+								<a class="navigation-link" href="#">Компания</a>
+							</li>
+							<li class="navigation-item">
+								<a class="navigation-link" href="#">Каталог</a>
+							</li>
+							<li class="navigation-item">
+								<a class="navigation-link" href="#">Новости</a>
+							</li>
+							<li class="navigation-item">
+								<a class="navigation-link" href="#">Спецпредложения</a>
+							</li>
+							<li class="navigation-item">
+								<a class="navigation-link" href="#">Доставка</a>
+							</li>
+							<li class="navigation-item">
+								<a class="navigation-link" href="#">Контакты</a>
+							</li>
+						</ul>
+
+						<ul class="navigation-user-menu">
+							<li class="navigation-item">
+								<button class="button" type="button" aria-label="Поиск">
+									<svg class="navigation-link-icon" aria-hidden="true" focusable="false" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1.91 7.25a5.33 5.33 0 1 1 10.67 0 5.33 5.33 0 0 1-10.67 0Zm9.56 5.16a6.67 6.67 0 1 1 .94-.94l2.8 2.8a.67.67 0 0 1-.94.95l-2.8-2.81Z"/>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		<main class="main">
+			<h1 class="visually-hidden">Главная траница магазина Техномарт</h1>
+			<section>
+				<div class="container">
+					
+				</div>
+			</section>
+			
+			<section class="list-catalog-categories">
+				<h2 class="visually-hidden"></h2>
+				<div class="container">
+					
+				</div>
+			</section> 
+		</main>
+
+		<footer class="page-footer">
+			<div class="container">
+				
+			</div>
+			<div class="container">
+				
+			</div>
+		</footer>
+	</body>
+</html>

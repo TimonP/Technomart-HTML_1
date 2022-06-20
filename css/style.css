@@ -1,0 +1,470 @@
+/*Fira Sans*/
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Fira_Sans/FiraSans-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+/*PT Sans*/
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PT_Sans/PTSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PT_Sans/PTSans-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+/*бордер бокс на всю страницу*/
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/*общий шрифт*/
+body {
+  font-family: "PT Sans", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  /*Сглаживание текста*/
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  /*min-width: 1400px;* УБРАТЬ В КОНЦЕ*/
+}
+
+body a,
+body button {
+  transition: 220ms all ease-in-out;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+/*--Скрытый элемент--*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.h2 {
+  font: inherit;
+  font-family: "Fira Sans", "Helvetica", sans-serif;
+  font-size: 32px;
+  line-height: 46px;
+  margin: 0;
+}
+
+.h3 {
+  font: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.h4 {
+  font: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.p {
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+/*кнопки*/
+.button {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  width: fit-content;
+  text-align: center;
+  transition: 220ms all ease-in-out;
+}
+
+.button-red {
+  background: #ee3643;
+  padding: 13px 6px 14px 5px;
+  min-width: 195px;
+}
+
+.button-red:hover {
+  background: #ca2c37;
+}
+
+.button-red:active {
+  background: #ba2732;
+}
+
+.button-green {
+  background: #63a63e;
+  padding: 12px 10px;
+}
+
+.button-green:hover {
+  background: #5fbb2d;
+}
+
+.button-green:active {
+  background: #518534;
+}
+
+/*-------- ХЕДЕР --------*/
+.navigation {
+  position: relative;
+}
+
+/*первая секция*/
+.header-contacts {
+  background: #f3f7f9;
+}
+
+.header .contacts {
+  margin: 0 -16px;
+  display: flex;
+  flex-wrap: wrap;
+  font: inherit;
+}
+
+.contacts > * {
+  margin: 0 16px;
+  padding: 13px 0 14px 0;
+  flex-shrink: 1;
+}
+
+.header .contact-name {
+  font-size: 14px;
+  line-height: 18px;
+  font-style: italic;
+  color: #ee3643;
+  margin-right: auto;
+}
+
+.header .contact-address {
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.header .contact-phone {
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  color: #293449;
+}
+
+.contact-phone:hover {
+  color: #63a63e;
+}
+
+.contact-phone:active {
+  opacity: 0.6;
+}
+
+.contact-phone svg {
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+/*вторая секция*/
+.header-content {
+  background: #293449;
+}
+
+.header-content-wrapper {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #ee3643;
+  min-width: 220px;
+  min-height: 45px;
+}
+
+.logo::after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100%;
+  height: 5px;
+  background-color: inherit;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  content: "";
+  z-index: 1;
+}
+
+.logo:hover {
+  background: #ca2c37;
+}
+
+.logo:active {
+  background: #ba2732;
+}
+
+.logo img {
+  display: block;
+}
+
+/*Поиск*/
+.search {
+  width: auto;
+  flex-grow: 1;
+  display: flex;
+}
+
+.search:focus-within {
+  background-color: #f1f5f7;
+}
+
+.search button[type="submit"] {
+  opacity: 0.3;
+  color: #ffffff;
+  padding: 12px;
+  margin-left: 9px;
+}
+
+.search:focus-within button[type="submit"] {
+  opacity: 1;
+  color: #405069;
+}
+
+.search:focus-within button[type="submit"]:hover {
+  opacity: 0.6;
+}
+
+.search:focus-within button[type="submit"]:active {
+  opacity: 0.4;
+}
+
+.search button[type="submit"]:hover {
+  opacity: 1;
+}
+
+.search button[type="submit"]:active {
+  opacity: 0.6;
+}
+
+.search-input-reset-button-wrapper {
+  position: relative;
+  flex-grow: 1;
+}
+
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-results-button,
+.search-input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search-input {
+  display: block;
+  padding: 10px 0;
+  padding-right: 45px;
+  font: inherit;
+  color: #293449;
+  background: transparent;
+  margin: 0;
+  cursor: text;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-radius: none;
+  width: 100%;
+  height: 100%;
+}
+
+.search-input::placeholder {
+  color: #ffffff;
+}
+
+.search-input:focus::placeholder {
+  opacity: 0;
+}
+
+.search:focus-within .search-input::placeholder {
+  color: #c5c5c5;
+}
+
+.search:not(:focus-within) .search-input {
+  color: #ffffff;
+}
+
+.search-reset-button {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  aspect-ratio: 1/1;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: url("../images/reset.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  display: none;
+}
+
+.search-input:valid + .search-reset-button {
+  display: block;
+}
+
+.search:not(:focus-within) .search-input:valid + .search-reset-button {
+  opacity: 0;
+}
+
+.search-reset-button:hover {
+  opacity: 0.7;
+}
+
+.search-reset-button:active {
+  opacity: 0.5;
+}
+
+.button-header-content {
+  padding: 14px 0 13px 7px;
+}
+
+.button-header-content svg + span {
+  margin-left: 10px;
+}
+
+.button-header-content:hover {
+  color: #5fbb2d;
+}
+
+.button-header-content:active {
+  color: #518534;
+}
+
+/*третья секция*/
+.header-navigation {
+  background: #3d546f;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation-main-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 0;
+  margin: 0;
+  margin-left: -26px;
+  flex: 1 1;
+}
+
+.navigation-main-menu .navigation-link {
+  padding: 20px 24px 25px 24px;
+  min-width: 106px;
+}
+
+.navigation-link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-link::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+}
+
+.navigation-link:hover {
+  background: #32425c;
+  color: #c5c5c5;
+}
+
+.navigation-link:active {
+  background: #32425c;
+  color: #ffffff;
+  /*font-weight: bold;*/
+  text-shadow: 0.5px 0 0.1px,
+              -0.5px 0 0.1px;
+}
+
+/*-------- МЕИН --------*/
+.main {
+  flex-grow: 1;
+}
+

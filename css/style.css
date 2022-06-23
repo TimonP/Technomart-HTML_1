@@ -60,7 +60,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
-  /*min-width: 1400px;* УБРАТЬ В КОНЦЕ*/
+  min-width: 1400px;
   cursor: default;
 }
 
@@ -578,7 +578,6 @@ a.button:not([href]) {
 .popover-wrapper {
   position: relative;
   display: flex;
-  /*align-items: center;*/
 }
 
 .popover {

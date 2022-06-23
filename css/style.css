@@ -1,13 +1,5 @@
 /*Fira Sans*/
 @font-face {
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
@@ -530,7 +522,7 @@ a.button:not([href]) {
   color: #518534;
 }
 
-.user-name {
+.user {
   display: flex;
   align-items: center;
   margin-left: 17px;
@@ -539,26 +531,30 @@ a.button:not([href]) {
   text-decoration: none;
 }
 
-.user-name:hover {
+.user-name::after {
+  content: attr(data-text);
+}
+
+.user:hover {
   color: #5fbb2d;
 }
 
-.user-name:active {
+.user:active {
   color: #518534;
 }
 
-.user-name svg {
+.user svg {
   color: #ffffff;
   opacity: 0.8;
   margin-right: 8px;
   transition: inherit;
 }
 
-.user-name:hover svg {
+.user:hover svg {
   color: #5fbb2d;
 }
 
-.user-name:active svg {
+.user:active svg {
   color: #518534;
 }
 
@@ -570,7 +566,7 @@ a.button:not([href]) {
   display: none;
 }
 
-.login .user-name {
+.login .user {
   display: none;
 }
 

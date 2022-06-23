@@ -61,6 +61,7 @@ body {
   -moz-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
   /*min-width: 1400px;* УБРАТЬ В КОНЦЕ*/
+  cursor: default;
 }
 
 body a,
@@ -349,6 +350,7 @@ a.button:not([href]) {
 
 .header-content-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -625,30 +627,34 @@ a.button:not([href]) {
   opacity: 0.6;
 }
 
-.auth-user-popover {
-  margin-top: 43px;
+.popover-login {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 5px;
   row-gap: 7px;
 }
 
-.auth-user-popover .input {
+.popover-login .h3 {
+  grid-column: 1/-1;
+  margin-bottom: 43px;
+}
+
+.popover-login .input {
   grid-column: 1/-1;
 }
 
-.auth-user-popover .input[type="password"] {
+.popover-login .input[type="password"] {
   margin-bottom: 6.5px;
 }
 
-.auth-user-popover .input:focus::-webkit-credentials-auto-fill-button {
+.popover-login .input:focus::-webkit-credentials-auto-fill-button {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
   right: 0;
 }
 
-.auth-user-popover .input::placeholder {
+.popover-login .input::placeholder {
   color: #000000;
 }
 
@@ -671,7 +677,7 @@ a.button:not([href]) {
   padding-left: 30px;
 }
 
-.auth-user-popover .button {
+.popover-login .button {
   margin-top: 31.5px;
 }
 
@@ -1464,7 +1470,6 @@ a.button:not([href]) {
   position: relative;
   min-width: 122px;
   margin-right: 17px;
-  cursor: default;
 }
 
 .product-card-final-price::before {

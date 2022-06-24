@@ -138,6 +138,10 @@ body button {
   transition: 220ms all ease-in-out;
 }
 
+.button svg {
+  flex-shrink: 0;
+}
+
 .button-red {
   background: #ee3643;
   padding: 13px 6px 14px 5px;
@@ -531,6 +535,10 @@ a.button:not([href]) {
   text-decoration: none;
 }
 
+.user svg {
+  flex-shrink: 0;
+}
+
 .user-name::after {
   content: attr(data-text);
 }
@@ -574,6 +582,7 @@ a.button:not([href]) {
 .popover-wrapper {
   position: relative;
   display: flex;
+  max-width: 400px;
 }
 
 .popover {
@@ -743,7 +752,7 @@ a.button:not([href]) {
   padding: 0;
   margin: 0;
   margin-left: -20px;
-  flex: 1 1;
+  flex: 3 1;
 }
 
 .navigation-main-menu .navigation-link {
@@ -777,6 +786,8 @@ a.button:not([href]) {
   align-items: center;
   padding: 0;
   margin: 0;
+  margin-left: auto;
+  max-width: 300px;
 }
 
 .navigation-user-menu .navigation-link[aria-label] {
@@ -926,26 +937,32 @@ a.button:not([href]) {
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .slider-info-item {
   position: relative;
   display: none;
+  min-height: 390px;
   background: #32425c;
   margin: 0;
   padding: 0;
+  padding-left: 51px;
+  padding-top: 53px;
+  padding-bottom: 48px;
+  flex-direction: column;
+  height: 100%;
 }
 
 .show {
-  display: block;
+  display: flex;
 }
 
 .slider-info-wrapper {
-  position: absolute;
+  position: relative;
   max-width: 50%;
   color: #ffffff;
-  top: 53px;
-  left: 51px;
+  z-index: 1;
 }
 
 .slider-image {
@@ -953,8 +970,13 @@ a.button:not([href]) {
   object-fit: contain;
   object-position: center;
   width: 100%;
-  margin: 0;
+  margin: auto 0;
   padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .slider-info-wrapper .p {
@@ -964,9 +986,9 @@ a.button:not([href]) {
 }
 
 .slider-info-item .button {
-  position: absolute;
-  bottom: 48px;
-  left: 51px;
+  position: relative;
+  max-width: 50%;
+  margin-top: auto;
 }
 
 /*боловые кнопки слайдера*/
@@ -1384,6 +1406,7 @@ a.button:not([href]) {
 .product-card-image-content {
   position: relative;
   height: 180px;
+  width: 100%;
 }
 
 .product-card-image {
@@ -1499,8 +1522,8 @@ a.button:not([href]) {
 
 .pagination-link {
   display: block;
-  width: 50px;
-  height: 45px;
+  min-width: 50px;
+  min-height: 45px;
   padding: 15px 10px 14px 10px;
   font: inherit;
   line-height: 100%;
@@ -1660,6 +1683,7 @@ a.button:not([href]) {
   display: grid;
   row-gap: 25px;
   padding-bottom: 13px;
+  align-self: start;
 }
 
 .footer .logo {
@@ -1742,15 +1766,12 @@ a.button:not([href]) {
   padding-bottom: 43px;
   flex-basis: 260px;
   margin-left: auto;
+  text-align: right;
 }
 
 .footer-info-left .footer-link {
   display: block;
   margin-bottom: 29px;
-}
-
-.footer-info-left {
-  text-align: right;
 }
 
 .email {

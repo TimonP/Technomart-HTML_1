@@ -84,8 +84,8 @@ body button {
   font: inherit;
   font-family: "Fira Sans", "Helvetica", sans-serif;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 46px;
+  font-size: 36px;
+  line-height: 42px;
   text-transform: uppercase;
   margin: 0;
 }
@@ -214,7 +214,7 @@ a.button:not([href]) {
   background: #ffffff;
   border: none;
   border-radius: 2px;
-  padding: 7px 8px 9px 13px;
+  padding: 8px 14px;
   margin: 0;
   cursor: text;
   outline: none;
@@ -293,6 +293,7 @@ a.button:not([href]) {
   display: flex;
   flex-wrap: wrap;
   font: inherit;
+  padding: 0 2px;
 }
 
 .contacts > * {
@@ -347,6 +348,7 @@ a.button:not([href]) {
 .header-content-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-right: 2px;
 }
 
 .logo {
@@ -355,7 +357,7 @@ a.button:not([href]) {
   justify-content: center;
   position: relative;
   background: #ee3643;
-  min-width: 220px;
+  min-width: 218px;
   min-height: 45px;
 }
 
@@ -379,8 +381,15 @@ a.button:not([href]) {
   background: #ba2732;
 }
 
-.logo img {
+.logo-img {
   display: block;
+}
+
+.header .logo-img {
+  width: 115px;
+  height: 25px;
+  transform: scaleX(0.94);
+  margin-bottom: 5px;
 }
 
 /*Поиск*/
@@ -443,8 +452,7 @@ a.button:not([href]) {
 
 .search-input {
   display: block;
-  padding: 10px 0;
-  padding-right: 45px;
+  padding: 9px 45px 11px 0;
   font: inherit;
   color: #293449;
   background: transparent;
@@ -515,7 +523,7 @@ a.button:not([href]) {
 }
 
 .button-header-content svg + span {
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .button-header-content:hover {
@@ -588,7 +596,7 @@ a.button:not([href]) {
 .popover {
   position: absolute;
   top: 12px;
-  right: 0;
+  right: 1px;
   background-color: #ffffff;
   border-radius: 2px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
@@ -640,11 +648,12 @@ a.button:not([href]) {
 
 .popover-login .h3 {
   grid-column: 1/-1;
-  margin-bottom: 43px;
+  margin-bottom: 39px;
 }
 
 .popover-login .input {
   grid-column: 1/-1;
+  margin-right: -5px;
 }
 
 .popover-login .input[type="password"] {
@@ -667,6 +676,7 @@ a.button:not([href]) {
   text-decoration: none;
   font-size: 14px;
   line-height: 18px;
+  margin-left: 4px;
 }
 
 .auth-link:hover {
@@ -693,6 +703,11 @@ a.button:not([href]) {
   padding: 11px 19px;
 }
 
+.login-icon {
+  margin-right: 4px;
+  transform: translate(-11px, -1px);
+}
+
 .popover-logout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -707,7 +722,7 @@ a.button:not([href]) {
 .popover-user-menu-list {
   list-style: none;
   margin: 0;
-  margin-top: 26px;
+  margin-top: 32px;
   margin-bottom: 24px;
   padding: 0;
   padding-left: 4px;
@@ -799,7 +814,6 @@ a.button:not([href]) {
 .navigation-link-icon {
   color: inherit;
   opacity: 0.6;
-  width: 19px;
   height: 18px;
   transition: opacity 220ms;
 }
@@ -822,7 +836,9 @@ a.button:not([href]) {
 }
 
 .navigation-user-menu .button-green {
-  margin: auto 2px;
+  margin: 10px 3px 15px 13px;
+  min-width: 170px;
+  border-radius: 4px;
 }
 
 /*-------- МЕИН --------*/
@@ -858,6 +874,7 @@ a.button:not([href]) {
   display: block;
   align-self: center;
   width: 90px;
+  margin-top: 12px;
   aspect-ratio: 1 / 1;
   background-size: initial;
   background-position: center;
@@ -1011,6 +1028,7 @@ a.button:not([href]) {
   cursor: pointer;
   padding: 0;
   margin: 0;
+  margin-top: 6px;
   position: relative;
   background-image: url("../images/slider-button.svg");
   background-repeat: no-repeat;
@@ -1092,7 +1110,7 @@ a.button:not([href]) {
   text-align: center;
   color: #ffffff;
   background: #ee3643;
-  padding: 6px 20px;
+  padding: 7px 20px;
   width: 100px;
   height: 30px;
   transform: rotate(45deg);
@@ -1143,7 +1161,7 @@ a.button:not([href]) {
   border-radius: 2px;
   margin: 0;
   margin-top: 8.71px;
-  margin-bottom: 6.29px;
+  margin-bottom: 3.29px;
   padding: 19px 20px;
   min-height: 40px;
   width: 100%;
@@ -1199,7 +1217,7 @@ a.button:not([href]) {
 .range-wrapper-inputs {
   display: flex;
   align-items: baseline;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .range-wrapper-inputs span {
@@ -1245,11 +1263,11 @@ a.button:not([href]) {
 }
 
 .catalog-filter-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .whith-radio .catalog-filter-item:not(:last-child) {
-  margin-bottom: 18px;
+  margin-bottom: 23px;
 }
 
 .control {
@@ -1440,6 +1458,7 @@ a.button:not([href]) {
   visibility: visible;
   opacity: 1;
   transition: opacity 200ms ease-in-out;
+  transform: translate(5px, -6px);
 }
 
 .product-card-image-hover .button + .button {
@@ -1459,6 +1478,7 @@ a.button:not([href]) {
   display: block;
   height: 14px;
   width: 20px;
+  transform: translateX(-6px);
 }
 
 .product-card-title {
@@ -1487,7 +1507,7 @@ a.button:not([href]) {
   padding: 11px;
   position: relative;
   min-width: 122px;
-  margin-right: 17px;
+  margin-right: 18px;
 }
 
 .product-card-final-price::before {
@@ -1497,7 +1517,7 @@ a.button:not([href]) {
   aspect-ratio: 1/1;
   background: inherit;
   border-radius: 4px;
-  right: 8px;
+  right: 9px;
   transform: rotate(45deg) translateY(-50%) translateX(50%);
   z-index: -1;
 }
@@ -1619,6 +1639,7 @@ a.button:not([href]) {
 /*Контакты*/
 .about-contacts {
   padding: 52px 0;
+  padding-bottom: 51px;
   color: #293449;
 }
 
@@ -1641,7 +1662,8 @@ a.button:not([href]) {
 }
 
 .about-contacts-list .button {
-  margin-top: 26px;
+  margin-top: 20px;
+  margin-left: 1px;
 }
 
 .map-image {
@@ -1681,14 +1703,22 @@ a.button:not([href]) {
 
 .footer-info-right {
   display: grid;
-  row-gap: 25px;
+  row-gap: 26px;
   padding-bottom: 13px;
   align-self: start;
 }
 
 .footer .logo {
   min-height: 51px;
-  width: 72%;
+  width: 225px;
+  min-width: fit-content;
+}
+
+.footer .logo-img {
+  width: 115px;
+  height: 25px;
+  transform: scale(0.97,1.12);
+  margin-bottom: 5px;
 }
 
 .footer-info {
@@ -1775,7 +1805,7 @@ a.button:not([href]) {
 }
 
 .email {
-  margin-top: 2px;
+  margin-top: 3px;
   display: flex;
 }
 

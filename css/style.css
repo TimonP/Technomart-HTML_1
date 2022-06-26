@@ -886,29 +886,38 @@ a.button:not([href]) {
   width: 90px;
   margin-top: 12px;
   aspect-ratio: 1 / 1;
-  background-size: initial;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #ffffff;
+  -webkit-mask-size: auto;
+  mask-size: auto;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 .materials::after {
-  background-image: url("../images/materials.svg");
+  -webkit-mask-image: url("../images/materials.svg");
+  mask-image: url("../images/materials.svg");
 }
 
 .instrument::after {
-  background-image: url("../images/instrument.svg");
+  -webkit-mask-image: url("../images/instrument.svg");
+  mask-image: url("../images/instrument.svg");
 }
 
 .mechanism::after {
-  background-image: url("../images/mechanism.svg");
+  -webkit-mask-image: url("../images/mechanism.svg");
+  mask-image: url("../images/mechanism.svg");
 }
 
 .discounts::after {
-  background-image: url("../images/discounts.svg");
+  -webkit-mask-image: url("../images/discounts.svg");
+  mask-image: url("../images/discounts.svg");
 }
 
 .delivery::after {
-  background-image: url("../images/delivery.svg");
+  -webkit-mask-image: url("../images/delivery.svg");
+  mask-image: url("../images/delivery.svg");
 }
 
 .bonus-prises-item-wrapper {
@@ -937,19 +946,19 @@ a.button:not([href]) {
   opacity: 0.7;
 }
 
-.bonus-prises-item:nth-of-type(1n) {
+.bonus-prises-item:nth-of-type(4n+1) {
   background: #ffbf47;
 }
 
-.bonus-prises-item:nth-of-type(2n) {
+.bonus-prises-item:nth-of-type(4n+2) {
   background: #3bbce3;
 }
 
-.bonus-prises-item:nth-of-type(3n) {
+.bonus-prises-item:nth-of-type(4n+3) {
   background: #dc91d8;
 }
 
-.bonus-prises-item:nth-of-type(4n) {
+.bonus-prises-item:nth-of-type(4n+4) {
   background: #8ed78f;
 }
 
@@ -1611,6 +1620,8 @@ a.button:not([href]) {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   text-align: left;
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .services-item .h3 {
@@ -1623,28 +1634,22 @@ a.button:not([href]) {
   color: #000000;
 }
 
-.services-item::before {
+.services-item::after {
   content: "";
   display: block;
   width: 90px;
   aspect-ratio: 1 / 1;
-  background-size: initial;
-  background-position: center;
-  background-repeat: no-repeat;
   margin-bottom: 46px;
+  background-color: #ca2c37;
+  -webkit-mask-size: auto;
+  mask-size: auto;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  order: -1;
 }
 
-.services-item.delivery-red::before {
-  background-image: url("../images/delivery-red.svg");
-}
-
-.services-item.discounts-red::before {
-  background-image: url("../images/discounts-red.svg");
-}
-
-.services-item.materials-red::before {
-  background-image: url("../images/materials-red.svg");
-}
 
 /*Контакты*/
 .about-contacts {

@@ -1,2 +1,3 @@
-# Technomart https://timonp.github.io/Technomart-HTML_1/
+# Technomart HTML Academy
+# https://timonp.github.io/Technomart-HTML_1/
 

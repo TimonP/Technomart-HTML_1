@@ -759,7 +759,7 @@ a.button:not([href]) {
   align-items: baseline;
   padding: 0;
   margin: 0;
-  margin-left: -20px;
+  margin-left: -22px;
   flex: 3 1;
 }
 
@@ -772,6 +772,17 @@ a.button:not([href]) {
   display: block;
   color: #ffffff;
   text-decoration: none;
+  text-align: center;
+  border-radius: 0;
+}
+
+.navigation-link::before {
+  display: block;
+  content: attr(data-title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .navigation-link:hover {
@@ -782,9 +793,9 @@ a.button:not([href]) {
 .navigation-link:active {
   background: #32425c;
   color: #ffffff;
-  /*font-weight: bold;*/
-  text-shadow: 0.5px 0 0.1px,
-              -0.5px 0 0.1px;
+  font-weight: bold;
+  /*text-shadow: 0.5px 0 0.1px,
+              -0.5px 0 0.1px; смотрится лучше*/
 }
 
 .navigation-user-menu {
@@ -792,10 +803,11 @@ a.button:not([href]) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   padding: 0;
   margin: 0;
   margin-left: auto;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .navigation-user-menu .navigation-link[aria-label] {
@@ -818,10 +830,17 @@ a.button:not([href]) {
 
 .navigation-link .count {
   display: inline-block;
-  margin-left: 5px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.navigation-link[aria-label="Избранное"] .count {
+  margin-left: 7.5px;
+}
+
+.navigation-link[aria-label="Корзина"] .count {
+  margin-left: 6px;
 }
 
 .zero .count {

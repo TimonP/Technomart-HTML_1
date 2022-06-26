@@ -201,6 +201,7 @@ button.button:disabled,
 a.button:not([href]) {
   color: #f3f7f9;
   background-color: #c5c5c5;
+  border-color: #c5c5c5;
   pointer-events: none;
   cursor: default;
 }

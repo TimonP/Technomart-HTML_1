@@ -886,38 +886,29 @@ a.button:not([href]) {
   width: 90px;
   margin-top: 12px;
   aspect-ratio: 1 / 1;
-  background-color: #ffffff;
-  -webkit-mask-size: auto;
-  mask-size: auto;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+  background-size: initial;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .materials::after {
-  -webkit-mask-image: url("../images/materials.svg");
-  mask-image: url("../images/materials.svg");
+  background-image: url("../images/materials.svg");
 }
 
 .instrument::after {
-  -webkit-mask-image: url("../images/instrument.svg");
-  mask-image: url("../images/instrument.svg");
+  background-image: url("../images/instrument.svg");
 }
 
 .mechanism::after {
-  -webkit-mask-image: url("../images/mechanism.svg");
-  mask-image: url("../images/mechanism.svg");
+  background-image: url("../images/mechanism.svg");
 }
 
 .discounts::after {
-  -webkit-mask-image: url("../images/discounts.svg");
-  mask-image: url("../images/discounts.svg");
+  background-image: url("../images/discounts.svg");
 }
 
 .delivery::after {
-  -webkit-mask-image: url("../images/delivery.svg");
-  mask-image: url("../images/delivery.svg");
+  background-image: url("../images/delivery.svg");
 }
 
 .bonus-prises-item-wrapper {
@@ -1620,8 +1611,6 @@ a.button:not([href]) {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   text-align: left;
   background: #ffffff;
-  display: flex;
-  flex-direction: column;
 }
 
 .services-item .h3 {
@@ -1634,22 +1623,28 @@ a.button:not([href]) {
   color: #000000;
 }
 
-.services-item::after {
+.services-item::before {
   content: "";
   display: block;
   width: 90px;
   aspect-ratio: 1 / 1;
+  background-size: initial;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-bottom: 46px;
-  background-color: #ca2c37;
-  -webkit-mask-size: auto;
-  mask-size: auto;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  order: -1;
 }
 
+.services-item.delivery-red::before {
+  background-image: url("../images/delivery-red.svg");
+}
+
+.services-item.discounts-red::before {
+  background-image: url("../images/discounts-red.svg");
+}
+
+.services-item.materials-red::before {
+  background-image: url("../images/materials-red.svg");
+}
 
 /*Контакты*/
 .about-contacts {

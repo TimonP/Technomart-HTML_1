@@ -1226,7 +1226,7 @@ a.button:not([href]) {
 
 .range-wrapper-inputs {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 3px;
 }
 
@@ -1251,6 +1251,7 @@ a.button:not([href]) {
   outline: none;
   color: #293449;
   margin: 0;
+  margin-top: 7px;
 }
 
 .range-input::-webkit-inner-spin-button,
